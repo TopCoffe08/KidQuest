@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #1e293b;
+    background-color: #f8fafc;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.font-game {
+  font-family: 'Fredoka', cursive, sans-serif;
+}
+
+/* Touch safe area utilities */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 1rem);
+}
+
+/* Glowing RPG animations */
+@keyframes xp-glow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.4), inset 0 0 6px rgba(251, 191, 36, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.7), inset 0 0 10px rgba(251, 191, 36, 0.7);
+  }
+}
+
+.animate-xp-glow {
+  animation: xp-glow 2.5s ease-in-out infinite;
+}
+
+/* Smooth stroke transition for circular SVG timer */
+.timer-ring-circle {
+  transition: stroke-dashoffset 1s linear, stroke 0.3s ease;
+}

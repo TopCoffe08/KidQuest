@@ -1,0 +1,6 @@
+{
+  "name": "KIDQUEST",
+  "description": "Aplikasi gamifikasi kebiasaan positif keluarga dan manajemen waktu anak dengan mekanisme RPG (Your Life, Your Level).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
